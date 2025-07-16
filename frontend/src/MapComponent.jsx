@@ -372,9 +372,8 @@ const MapComponent = () => {
     const color = getMarkerColor(status);
     const iconSize = 30;
     const sectorIcon = getSectorIcon(sector);
-    const isDarkBg = ['#28a745', '#17a2b8', '#007bff', '#dc3545', '#6c757d'].includes(color);
-    const iconColor = isDarkBg ? '#fff' : '#222';
-    const icons = Array.from(sectorIcon);
+    const iconColor = '#fff'; // Always use white for icon color
+    const icons = Array.from(sectorIcon); // Restore this line to fix ReferenceError
     const isDouble = icons.length > 1;
     const isGear = sectorIcon === '⚙️';
     const fontSize = isGear

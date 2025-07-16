@@ -31,7 +31,6 @@ const RegionMap = ({
         center={region1Center}
         zoom={zoomLevel}
         style={{ height: '100%', width: '100%', minHeight: '400px' }}
-        ref={mapRef}
         zoomControl={false}
         minZoom={8}
         maxZoom={13}
